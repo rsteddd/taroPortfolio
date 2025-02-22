@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    background: linear-gradient(to bottom, #250044, #000000);
+    background-attachment: fixed;
+    color: white;
+}
+
+
