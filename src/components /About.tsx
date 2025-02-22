@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import icon from "../assets/icon.jpg";
 
 const About = () => {
     return (
@@ -14,7 +15,7 @@ const About = () => {
 
             <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8 relative z-10">
                 <motion.img
-                    src="/src/assets/icon.jpg"
+                    src={icon}
                     alt="Tarot Reader"
                     className="w-72 h-96 object-cover border-4 border-purple-500 rounded-lg shadow-lg"
                     initial={{ opacity: 0, scale: 0.8 }}
