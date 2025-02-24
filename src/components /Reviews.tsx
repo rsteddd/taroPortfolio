@@ -1,11 +1,7 @@
 import { motion } from "framer-motion";
+import {reviews} from "../data/reviews.ts";
 
 const Reviews = () => {
-    const reviews = [
-        { name: "Андрій", text: "Дуже точний розклад! Дуже дякую за допомогу!" },
-        { name: "Марина", text: "Карти Таро відкрили мені очі на ситуацію. Рекомендую!" },
-        { name: "Ольга", text: "Професійний підхід та неймовірна точність!" }
-    ];
 
     return (
         <section className="py-20 text-white text-center px-6">
@@ -22,15 +18,15 @@ const Reviews = () => {
                 {reviews.map((review, index) => (
                     <motion.div
                         key={index}
-                        className="p-6 border border-purple-500 rounded-xl shadow-lg
+                        className="p-5 border border-purple-500 rounded-xl shadow-lg
                         bg-gradient-to-b from-black to-purple-900/20 backdrop-blur-lg
                         transition-transform transform hover:scale-105 hover:shadow-purple-500/50"
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: index * 0.2 }}
                     >
-                        <p className="text-lg italic">"{review.text}"</p>
-                        <h4 className="mt-4 font-semibold text-purple-400">- {review.name}</h4>
+                        <p className="text-lg ">"{review.text}"</p>
+                        <h4 className="mt-3 font-semibold text-purple-400">- {review.name}</h4>
                     </motion.div>
                 ))}
             </div>

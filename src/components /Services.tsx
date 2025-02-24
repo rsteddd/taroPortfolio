@@ -1,11 +1,5 @@
 import { motion } from "framer-motion";
-import { FaStar, FaHeart, FaMagic } from "react-icons/fa";
-
-const services = [
-    { icon: <FaStar />, title: "Кар'єра та фінанси", description: "Дізнайтеся, що чекає вас у сфері роботи та грошей." },
-    { icon: <FaHeart />, title: "Любов та відносини", description: "Розклади на стосунки, кохання та гармонію в парі." },
-    { icon: <FaMagic />, title: "Розклад на ситуацію", description: "Отримайте відповіді на важливі питання за допомогою карт." },
-];
+import {services} from "../data/services.tsx";
 
 const Services = () => {
     return (
