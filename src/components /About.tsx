@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import icon from "../assets/icon.jpg";
 
 const About = () => {
+    const { t } = useTranslation();
+
     return (
         <section className="py-20 text-white text-center px-6 relative overflow-hidden">
             <motion.h2
@@ -10,7 +13,7 @@ const About = () => {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1 }}
             >
-                Про мене
+                {t("about.title")}
             </motion.h2>
 
             <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8 relative z-10">
@@ -29,9 +32,7 @@ const About = () => {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    Вітаю! Мене звати Христина, і я професійний таролог. Я допомагаю людям розкривати приховані відповіді, знаходити баланс у житті та приймати важливі рішення. Карти Таро – це не просто інструмент передбачення, а глибоке дзеркало вашої душі, що розкриває нові можливості та підказує правильний шлях.
-                    <br /><br />
-                    Кожен розклад – це унікальна подорож, де ми разом відкриваємо істину та шукаємо рішення для питань, які хвилюють вас найбільше. Незалежно від того, чи цікавить вас кохання, кар’єра, фінанси або життєвий шлях – я допоможу вам побачити картину цілісно та знайти відповіді, які відкриють двері до нового майбутнього.
+                    {t("about.description")}
                 </motion.p>
             </div>
         </section>

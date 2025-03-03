@@ -1,0 +1,43 @@
+{
+  "hero": {
+    "title": "Reveal Your Destiny",
+    "subtitle": "Explore the depths of your fate with the magic of Tarot cards.\nDiscover the truth through the signs that lead you to the future. ♠"
+  },
+  "services": {
+    "title": "Services",
+    "career": "Career & Finance",
+    "career_desc": "Find out what awaits you in the field of work and money.",
+    "love": "Love & Relationships",
+    "love_desc": "Readings about relationships, love, and harmony in a couple.",
+    "situation": "Situation Reading",
+    "situation_desc": "Get answers to important questions using the cards."
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Hello! My name is Khrystyna, and I am a professional tarot reader. I help people uncover hidden answers, find balance in life, and make important decisions. Tarot cards are not just a tool for fortune-telling but a deep mirror of your soul that reveals new opportunities and guides you on the right path.\n\nEach reading is a unique journey where we uncover the truth together and seek solutions to the questions that concern you the most. Whether you are interested in love, career, finances, or your life path – I will help you see the whole picture and find the answers that open doors to a new future."
+  },
+  "reviews": {
+    "title": "Customer Reviews",
+    "list": [
+      {
+        "name": "Victoria",
+        "text": "Thank you so much for this reading 😍❤️, I really liked it! Everything was clear and concise without unnecessary details. This reading helped me a lot, gave me the strength to believe in myself and not lose heart 😌, which is very important. Thank you very much 😘. If needed, I will definitely reach out again!"
+      },
+      {
+        "name": "Julia",
+        "text": "I want to leave a review about the reading. In general, I didn’t really believe in such things, but after your reading, I completely changed my mind about it. Everything happened exactly as you said, down to the details. So, thank you very much❣️"
+      },
+      {
+        "name": "Vitali",
+        "text": "I didn't believe in these things at all, I just joined for fun, but after two months of seeing similar card patterns, I got a little disoriented😅. Of course, the cards were good, but when your words match what actually happens every month, it gets a bit scary😅. I still don’t fully believe, but I would like to do it again!)"
+      }
+    ]
+  },
+  "footer":{
+    "rights": "All rights reserved.",
+    "contact": "Contact me",
+    "message": "Message me on",
+    "or": "or",
+    "consultation": "to get a consultation"
+  }
+}

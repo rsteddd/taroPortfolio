@@ -1,7 +1,12 @@
 import { FaStar, FaHeart, FaMagic } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
-export const services = [
-    { icon: <FaStar />, title: "Кар'єра та фінанси", description: "Дізнайтеся, що чекає вас у сфері роботи та грошей." },
-    { icon: <FaHeart />, title: "Любов та відносини", description: "Розклади на стосунки, кохання та гармонію в парі." },
-    { icon: <FaMagic />, title: "Розклад на ситуацію", description: "Отримайте відповіді на важливі питання за допомогою карт." },
-];
+export const useServices = () => {
+    const { t } = useTranslation();
+
+    return [
+        { icon: <FaStar />, title: t("services.career"), description: t("services.career_desc") },
+        { icon: <FaHeart />, title: t("services.love"), description: t("services.love_desc") },
+        { icon: <FaMagic />, title: t("services.situation"), description: t("services.situation_desc") },
+    ];
+};

@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
 import { FaStar, FaSpa } from "react-icons/fa";
+import { useTranslation } from "react-i18next"; // Підключаємо хук для перекладу
 
 const Hero = () => {
+    const { t } = useTranslation(); // Отримуємо функцію t()
+
     return (
         <section className="relative text-white text-center py-24 px-6 flex flex-col items-center justify-center min-h-screen overflow-hidden">
             {/* Анімовані піки та зірки */}
@@ -36,7 +39,7 @@ const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
             >
-                Розкрийте свою долю
+                {t("hero.title")} {/* Використовуємо переклад */}
             </motion.h1>
 
             {/* Підзаголовок */}
@@ -46,8 +49,7 @@ const Hero = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1, delay: 0.5 }}
             >
-                Досліджуйте глибини своєї долі за допомогою магії карт Таро.
-                <br />Відкрийте істину через знаки, що ведуть вас до майбутнього. ♠
+                {t("hero.subtitle")}
             </motion.p>
         </section>
     );

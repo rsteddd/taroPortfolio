@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
-import {reviews} from "../data/reviews.ts";
+import { useTranslation } from "react-i18next";
 
 const Reviews = () => {
+    const { t } = useTranslation();
+    const reviews = t("reviews.list", { returnObjects: true }) || [];
 
     return (
         <section className="py-20 text-white text-center px-6">
@@ -11,11 +13,11 @@ const Reviews = () => {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1 }}
             >
-                Відгуки
+                {t("reviews.title")}
             </motion.h2>
 
             <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
-                {reviews.map((review, index) => (
+                {Array.isArray(reviews) && reviews.map((review, index) => (
                     <motion.div
                         key={index}
                         className="p-5 border border-purple-500 rounded-xl shadow-lg
@@ -25,7 +27,7 @@ const Reviews = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: index * 0.2 }}
                     >
-                        <p className="text-lg ">"{review.text}"</p>
+                        <p className="text-lg">"{review.text}"</p>
                         <h4 className="mt-3 font-semibold text-purple-400">- {review.name}</h4>
                     </motion.div>
                 ))}
